@@ -20,22 +20,7 @@ While developing you can pass the `-debug` flag for a little more verbose output
 
 ### Install the program as a service on Windows
 
-1. Open the Windows Service Manager:
-   - Press `Win + R`, type `services.msc`, and hit Enter.
-2. Add a new service:
-   - Right-click in the Services list and select "New" -> "Service".
-3. Service Information:
-   - Service name: Provide a meaningful name for your service (e.g., "FF Earnings Data Scraper").
-   - Description (optional):  Enter a brief description.
-   - Startup type: Choose "Automatic" if you want the service to start automatically on boot or "Manual" to start it manually.
-4. Browse for your executable:
-   - Click "Browse..." and locate your compiled `.exe` file.
-5. Specify service account (optional, but recommended):
-   - If your service needs specific permissions to access files, databases, or network resources, create a dedicated user account in Windows with those permissions.
-   - Click "This account..." and enter the credentials for that account.
-6. Finish and start:
-   - Click "OK" to create the service.
-   - You can now start, stop, and manage the service like any other Windows service from the Service Manager.
+Use the [Non-Sucking Service Manager](https://nssm.cc/)
 
 #### Important considerations
 
