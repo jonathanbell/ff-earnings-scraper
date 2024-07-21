@@ -209,7 +209,7 @@ func scrapeEarningsDates(debugFlag bool) {
 	dbPort := os.Getenv("DB_PORT")
 	dbUser := os.Getenv("DB_USERNAME")
 
-	dbURI := fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=disable",
+	dbURI := fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=require",
 		dbHost, dbPort, dbUser, dbDatabase, dbPassword)
 
 	db, err := gorm.Open("postgres", dbURI)
